@@ -1,0 +1,21 @@
+1 - Para cada informação abaixo, classifique segundo o tipo de dados
+a) Quantidade de vendedores da loja - número inteiro
+b) Nome da rua, com número e complemento - string
+c) Preço do etanol comum - caractere
+d) Estado de iluminação de uma lâmpada - verdadeiro ou falso
+e) CEP do endereço, com hífen - caractere
+f) Andar do prédio onde está o elevador (indicador acima da porta) - caractere
+g) Pressionamento do botão do elevador (led acima do botão) - verdadeiro ou falso
+h) Data de aniversário do professor - datas
+i) Peso do prato na balança do restaurante - reais
+j) Número de bois no curral da fazenda - inteiro
+k) dia dos namorados em 2020 - datas
+l) quantidade de laranjas na caixa - inteiro
+m) uma vogal minúscula - caractere
+n) Titulo de um livro - string
+o) Limite do cartão de crédito - float
+p) horário de transmissão do jogo - datas
+q) Altura de um prédio - real
+r) páginas do caderno - inteiro
+s) sala de reunião está disponível (ou ocupada) - float
+t) Alternativas do enunciado da questão de múltipla escolha - caractere
