@@ -22,29 +22,37 @@ MENSAGEM: "FULANO DE TAL, VOCÊ ESTÁ LIBERADO PARA CIRCULAR PELA CIDADE"
 
 const prompt = require('prompt-sync') ();
 
-    console.log("\n");
+   console.log("\n");
     console.log("^^^^^^^^^^^^^^^^^^^^^ Decreto Fácil ^^^^^^^^^^^^^^^^^^^^ \n");
-  var nome = prompt ("Digite o nome completo da pessoa ==> ");
+var nome = prompt ("Digite o nome completo da pessoa ==> ");
     console.log("\n");
-  var morador = prompt ("É morador de Teresópolis? ==> ");
+var morador = prompt ("É morador de Teresópolis? ==> ");
     console.log("\n");
+var dataAtual = new Date();
+var dia = dataAtual.getDate();
 
   if (morador == "sim") {;
-    var cpf = prompt ("Digite o seu CPF ==> ");  
+    var cpf = prompt ("Digite o último número do seu CPF ==> ");  
     if (cpf % 2 === 0 && dia % 2 === 0) {;
-       console.log("*** Hoje é dia", dia,"(par) e o seu CPF termina em", cpf, "(par) portanto você pode entrar na loja ***");
+       console.log("*** Hoje é dia", dia,"e o seu CPF termina em", cpf,"\n"
+                  + " portanto", nome,",você pode entrar na cidade ***");
     } else if (cpf % 2 === 0 && dia %2 !== 0) {;
-       console.log("*** Hoje é dia", dia, "(par) e o seu CPF termina em", cpf, "(ímpar) portanto você não pode entrar na loja ***");
+       console.log("*** Hoje é dia", dia, " e o seu CPF termina em", cpf,"\n"
+                   + "portanto", nome,",você pode entrar mas não pode transitar pela cidade ***");
     } else if (cpf % 2 !== 0 && dia % 2 !== 0) {;
-       console.log("*** Hoje é dia", dia, "(ímpar) e o seu CPF termina em", cpf, "(ímpar) portanto você pode entrar na loja ***");
+       console.log("*** Hoje é dia", dia, "e o seu CPF termina em", cpf, "\n"
+                   + "portanto", nome,"você pode entrar na cidade ***");
     } else if (cpf % 2 !== 0 && dia % 2 === 0) {;
-       console.log("*** Hoje é dia", dia, "(par) e o seu CPF termina em", cpf, "(ímpar) portanto você não pode entrar na loja ***");
+       console.log("*** Hoje é dia", dia, "e o seu CPF termina em", cpf, "\n"
+                   + "portanto", nome,"você pode entrar mas não pode transitar pela cidade ***");
     }} 
-  else var profissão = prompt ("Selecione abaixo a sua profissão:");{
+  else { 
      console.log("1 - Área da Saúde" );
      console.log("2 - Área militar");
-     console.log("3 - Área da educação";
+     console.log("3 - Área da educação");
      console.log("4 - Servidor público");
-     console.log("5 - Nenhuma das opções acima");}
-    
-
+     console.log("5 - Nenhuma das opções acima");
+     var profissão = prompt ("Digite um número das opções acima ==>");
+     if (profissão == 5) {;
+      console.log("Você não pode entrar na cidade");
+     } else {console.log("***", nome," Você pode entrar na cidade ***");}}
